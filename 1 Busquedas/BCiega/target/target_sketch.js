@@ -1549,7 +1549,7 @@ class Node:
 
 
         
-class AEstrella:
+class BCiego:
 
     def __init__(self, columnas, filas, start, end):
 
@@ -1618,7 +1618,7 @@ class AEstrella:
                 caminoFinal.append(temp.previous)
                 temp = temp.previous
 
-        openSet = AEstrella.clean_open_set(openSet, nodoActual)
+        openSet = BCiego.clean_open_set(openSet, nodoActual)
         closedSet.append(nodoActual)
         vecinos = nodoActual.vecinos
         for vecino in vecinos:
@@ -1640,9 +1640,9 @@ class AEstrella:
 
     def main(self):
 
-        grid = AEstrella.crearMalla(self.columnas, self.filas)
-        grid = AEstrella.llenarMallas(grid, self.columnas, self.filas, obsRatio = 30)
-        grid = AEstrella.getVecinos(grid, self.columnas, self.filas)
+        grid = BCiego.crearMalla(self.columnas, self.filas)
+        grid = BCiego.llenarMallas(grid, self.columnas, self.filas, obsRatio = 30)
+        grid = BCiego.getVecinos(grid, self.columnas, self.filas)
         openSet  = []
         closedSet  = []
         nodoActual = None
@@ -1650,7 +1650,7 @@ class AEstrella:
         openSet.append(grid[self.start[0]][self.start[1]])
         self.end = grid[self.end[0]][self.end[1]]
         while len(openSet) > 0:
-            openSet, closedSet, nodoActual, caminoFinal = AEstrella.start_path(openSet, closedSet, nodoActual, self.end)
+            openSet, closedSet, nodoActual, caminoFinal = BCiego.start_path(openSet, closedSet, nodoActual, self.end)
             if len(caminoFinal) > 0:
                 break
 
@@ -1708,9 +1708,9 @@ def draw():
         
  
 
-        grid = AEstrella.crearMalla(columnas, filas)   
-        grid = AEstrella.llenarMallas(grid, columnas, filas, obsRatio = 30)
-        grid = AEstrella.getVecinos(grid, columnas, filas)
+        grid = BCiego.crearMalla(columnas, filas)   
+        grid = BCiego.llenarMallas(grid, columnas, filas, obsRatio = 30)
+        grid = BCiego.getVecinos(grid, columnas, filas)
         start = grid[start[0]][start[1]]
         end = grid[end[0]][end[1]]
         end.obstaculo = False
@@ -1729,7 +1729,7 @@ def draw():
         flag = True
 
     if len(openSet) > 0:
-        openSet, closedSet, nodoActual, caminoFinal = AEstrella.start_path(openSet, closedSet, nodoActual, end)
+        openSet, closedSet, nodoActual, caminoFinal = BCiego.start_path(openSet, closedSet, nodoActual, end)
 
         mostrar(start, "green", w,h)
         mostrar(end, "red",w,h)
