@@ -1,2 +1,5 @@
 # InteligenciaArtificial
 Trabajos y tareas del curso
+
+IMPORTANTE:
+Para ejecutar los sketchbooks, primero debe instalarse Pyp5js desde la consola usando pip o pip3. Seguidamente, crear un sketchbook desde la consola utilizando el comando pyp5js new "nombre" (sin las comillas). En la ruta C:\Users\Usuario se creará una carpeta con el nombre sketchbook-pyp5js, donde encontraremos todos los sketchbooks que creamos. Aquí encontraremos un archivo .py con el mismo nombre que el sketchbook. Se debe reemplazar dicho archivo con el correspondiente para la ejecución del algoritmo de búsqueda, asegurando que tenga el mismo nombre que la carpeta. Seguidamente, desde la consola, compilamos el sketchbook con el comando pyp5js compile "nombre" (nuevamente sin las comillas), y una vez hecho esto podemos ejecutar los sketchbooks en nuestro navegador con el comando pyp5js serve. Para esto es necesario tener instalado un host local, y en nuestro caso, el host local utilizado fue Flask. Al abrir la dirección predeterminada de nuestro host local, podemos elegir el sketchbook que queremos ejecutar.
