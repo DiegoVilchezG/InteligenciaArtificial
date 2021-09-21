@@ -15,6 +15,7 @@ Módulos: pyp5js (instalación a través de pip install en la línea de comandos
 
 4.- Finalmente ingresamos a la dirección del host y ejecutamos. Para visualizarlo accedemos a la dirección por defecto del localhost.
 
+#Implementacion de algoritmos:
 
 Algoritmo A*
 
