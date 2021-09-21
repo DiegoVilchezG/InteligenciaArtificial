@@ -18,10 +18,8 @@ Módulos: pyp5js (instalación a través de pip install en la línea de comandos
 
 Algoritmo A*
 
-![Image text](https://github.com/DiegoVilchezG/InteligenciaArtificial/tree/main/1%20Busquedas/Astar_image.jpg)
+![Astar](https://user-images.githubusercontent.com/54364183/134096743-5606cd6f-0ccf-439e-8755-643b45aa3f40.png)
 
 Búsqueda por amplitud
 
-blob:https://web.whatsapp.com/5b541715-b01a-4131-875d-7291ab8bfff0
-
-![Racoon](https://user-images.githubusercontent.com/54364183/134096346-b3195f3d-17f8-4300-8545-3a25f34d2bf2.png)
+![Bciego](https://user-images.githubusercontent.com/54364183/134096755-04f07063-0984-4e5c-8b91-fbc12c23a419.png)
