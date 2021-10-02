@@ -1,1 +1,1 @@
-Compilar en cualquier compilador de c++
+Ubicar archivo .cpp en Damas/ , y compilar donde se guste
